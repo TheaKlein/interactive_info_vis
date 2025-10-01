@@ -5,7 +5,7 @@ let designWidth = 400;
 let designHeight= 400;
 let horizon ;
 function setup() {
-  createCanvas(designWidth,designHeight);
+  createCanvas(designWidth,designHeight); //windowWidth, windowHeight
   horizon =height/2;
 }
 
@@ -26,24 +26,33 @@ function draw() {
   }
 
   //sun
-  fill("white");
-  
-  rect(width/4, shapeHeight, width/2);
+  stroke("orange");
+  strokeWeight(5);
+  fill("yellow");
+  circle(width / 2, shapeHeight / 2, 100);
+
+
   textSize(20);
   fill("black");
-  text('Hi! My name is...', currentWidth/2, shapeHeight/2);
+  text('Hi! My name is Thea', currentWidth/2, shapeHeight/2);
   
 
-
   // draw line for horizon
-  stroke('lavender');
+  stroke('darkgreen');
   line(0,horizon,width,horizon);
 
   //grass
 
-  fill("lavender");
-
+  fill("lightgreen");
   rect(0, horizon, width, height);
+
+  textSize(25)
+  text("🌸", 100, 250) 
+  text("🌸", 50, 300)
+  text("🌸", 150, 275)
+  text("🌸", 200, 330)
+  text("🌸", 250, 230)
+  text("🌸", 300, 310)
 
 }
 

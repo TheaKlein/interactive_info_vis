@@ -1,2 +1,4 @@
 # interactive_info_vis
-Visualization template for class!
+My name is Thea Klein-Balajee, and this is my visualization template for class!
+
+
